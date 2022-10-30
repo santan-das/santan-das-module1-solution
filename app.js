@@ -10,4 +10,8 @@ app.controller("LunchCheckController", LunchCheckController);
 
 function LunchCheckController($scope, $filter) {
 
+	$scope.myFunc = function(myE) {
+		console.log(myE);
+	}
+
 }
