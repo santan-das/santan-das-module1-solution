@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="app.js"></script>
 <body ng-app="LunchCheck">
 
-<div>
+<div ng-controller="LunchCheckController">
  
 <p>Input something in the input box:</p>
 <p>Name: <input type="text" ng-model="name"></p>
-<p ng-bind="name"></p>
+<!-- <p ng-bind="name"></p> -->
+{{message}}
+
 <br>
-<button ng-click="myFunc($event)">Check If Too Much</button>
+<button ng-click="myFunc()">Check If Too Much</button>
 </div>
 
 </body>
